@@ -3,48 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elite Capital Solutions</title>
+  <title>Ascend Solutions LLC</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
 </head>
 <body class="min-h-screen bg-white text-gray-900">
-  <header class="bg-black text-white p-6 shadow-md">
-    <h1 class="text-3xl font-bold">Elite Capital Solutions</h1>
-    <p class="text-sm mt-1">Get up to $200K in business funding – 0% interest for up to 18 months</p>
+  <header class="bg-black text-white p-6 flex items-center justify-between shadow-md">
+    <div class="flex items-center space-x-4">
+      <img src="/logo.png" alt="Ascend Solutions Logo" class="w-12 h-12 rounded-full">
+      <div>
+        <h1 class="text-2xl font-bold">Ascend Solutions LLC</h1>
+        <p class="text-sm">Business Credit & Funding Experts</p>
+      </div>
+    </div>
   </header>
 
-  <main class="p-6 grid gap-8 max-w-5xl mx-auto">
-    <section class="bg-gray-100 p-6 rounded-2xl shadow">
-      <h2 class="text-2xl font-semibold mb-2">Who We Help</h2>
-      <p>Whether you're a real estate investor, Airbnb host, or e-commerce entrepreneur – we help business owners access the funding they need to grow.</p>
+  <main class="p-6 max-w-5xl mx-auto space-y-12">
+    <section class="fade-in-up bg-gray-100 p-6 rounded-2xl shadow">
+      <h2 class="text-3xl font-semibold mb-4">Welcome to Ascend Solutions</h2>
+      <p class="text-lg leading-relaxed">We help business owners access up to $200,000 in funding with 0% interest for up to 18 months. Whether you're just starting out or scaling fast, we’ll guide you through every step to secure the funding you need.</p>
     </section>
 
-    <section class="bg-gray-100 p-6 rounded-2xl shadow">
-      <h2 class="text-2xl font-semibold mb-2">What You Need to Qualify</h2>
-      <ul class="list-disc ml-5 space-y-1">
-        <li>680+ credit score</li>
-        <li>At least one $5K+ credit card</li>
-        <li>U.S. based LLC or Corporation</li>
-      </ul>
-    </section>
-
-    <section class="bg-gray-100 p-6 rounded-2xl shadow">
-      <h2 class="text-2xl font-semibold mb-2">How It Works</h2>
-      <ol class="list-decimal ml-5 space-y-1">
-        <li>Fill out our 2-minute application</li>
-        <li>Speak with a funding advisor</li>
-        <li>Get funded in as little as 7 days</li>
-      </ol>
-    </section>
-
-    <section class="bg-black text-white p-6 rounded-2xl shadow text-center">
-      <h2 class="text-2xl font-bold mb-2">Apply Today</h2>
-      <p class="mb-4">No upfront fees. No obligation. Just results.</p>
-      <button class="bg-white text-black font-semibold py-2 px-4 rounded-xl hover:bg-gray-200">Start Application</button>
+    <section class="fade-in-up bg-gray-100 p-6 rounded-2xl shadow">
+      <h2 class="text-2xl font-bold mb-4">Pre-Qualification Questions</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block font-medium">1. What’s your current credit score?</label>
+          <input type="text" class="w-full p-2 rounded border" placeholder="e.g., 720">
+        </div>
+        <div>
+          <label class="block font-medium">2. Combined personal credit card limits?</label>
+          <input type="text" class="w-full p-2 rounded border" placeholder="$20,000">
+        </div>
+        <div>
+          <label class="block font-medium">3. Any late payments? How old?</label>
+          <input type="text" class="w-full p-2 rounded border" placeholder="No / Yes - 6 months ago">
+        </div>
+        <div>
+          <label class="block font-medium">4. Any collections, charge-offs, or other derogatory marks?</label>
+          <input type="text" class="w-full p-2 rounded border" placeholder="e.g., 1 collection, 1 charge-off">
+        </div>
+        <div>
+          <label class="block font-medium">5. Total credit card utilization?</label>
+          <input type="text" class="w-full p-2 rounded border" placeholder="e.g., 30%">
+        </div>
+        <div>
+          <label class="block font-medium">6. Do you currently have any business credit cards?</label>
+          <input type="text" class="w-full p-2 rounded border" placeholder="Yes / No">
+        </div>
+        <button type="submit" class="mt-4 bg-black text-white px-6 py-2 rounded-xl hover:bg-gray-800">Submit</button>
+      </form>
     </section>
   </main>
 
   <footer class="text-center p-4 text-sm text-gray-500">
-    &copy; <script>document.write(new Date().getFullYear())</script> Elite Capital Solutions. All rights reserved.
+    &copy; <script>document.write(new Date().getFullYear())</script> Ascend Solutions LLC. All rights reserved.
   </footer>
+
+  <script>
+    ScrollReveal().reveal('.fade-in-up', { distance: '40px', duration: 1000, easing: 'ease-in-out', origin: 'bottom', interval: 200 });
+  </script>
 </body>
 </html>
